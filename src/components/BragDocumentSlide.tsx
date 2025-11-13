@@ -1,11 +1,5 @@
 import { useBragDocumentCompleteness } from '@/hooks/useBragDocumentCompleteness';
 
-function getCompletionColor(percentage: number): string {
-  if (percentage >= 80) return '#4ade80';
-  if (percentage >= 60) return '#facc15';
-  return '#ef4444';
-}
-
 export default function BragDocumentSlide() {
   // Use May 2025 to match the date range with data
   const year = 2025;

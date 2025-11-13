@@ -1,11 +1,5 @@
 import { useAttendanceLeaderboard } from '@/hooks/useAttendanceLeaderboard';
 
-function getHealthScoreColor(score: number): string {
-  if (score >= 80) return '#4ade80';
-  if (score >= 60) return '#facc15';
-  return '#ef4444';
-}
-
 export default function AttendanceSlide() {
   // Use January to May 2025 to match data availability
   const start = '2025-01-01';
